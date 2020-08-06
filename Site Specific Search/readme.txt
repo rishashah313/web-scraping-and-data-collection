@@ -1,1 +1,7 @@
+Google’s Site-Specific Search offers a user the ability to search for a site/domain for the required content. We used Google’s SSS programmatically in Python as an initial approach to finding LARC content on university health center websites.
+Since we needed to detect phrases of words such as “contraceptive shot” on webpages, we made use of double quotes to treat the terms as a phrase in the query. SSS returns the URL of the page in the domain that has the term/terms specified in the query. A major shortcoming of this approach that we observed was that even though we used double quotes around the terms, the results we got contained links of pages that do not have the terms as a phrase. 
+For example, if Site-Specific Search is applied on the website https://www.purchase.edu/offices/health-services/ with the search phrase “birth control shot” in quotes,  the URL https://www.purchase.edu/offices/health-services/available-services/ is returned. But this webpage actually mentions the phrases “Flu shot” and “Selected birth control methods” but not the phrase “birth control shot”. This leads to inaccuracies in data collection.
 
+Moreover, SSS gives no information about where on a website a webpage is placed. While using Site- Specific Search programmatically, a user gets blocked after every 45 queries for a certain time interval and thus the program cannot be run in a continuous loop.
+
+Our "automation for navigation" approach overcomes these issues and not only detects pages with LARC but also captures additional relevant information.
