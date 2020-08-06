@@ -1,1 +1,1 @@
-
+Here we have interfaced Google's Custom Search API to search Google programmatically in Python. . This API, unfortunately, comes with a query limit of 100 queries per day. As a solution for this issue, we created multiple API keys so that as many 100 queries as the number of API keys could be run per day.
