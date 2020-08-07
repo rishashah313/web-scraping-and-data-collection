@@ -1,1 +1,1 @@
-
+Here we use a combination of ScraPy and Selenium to scrape out just the desired content. For this, the user needs to specify the xpath of the element with the content that needs to be scraped.
